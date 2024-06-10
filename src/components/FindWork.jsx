@@ -17,15 +17,15 @@ function FindWork() {
             <div style={{ backgroundImage: `url(${bg})`, backgroundSize: 'cover', backgroundPosition: 'center', width: '100%', height: '100%', position: 'absolute', top: 0, eft: 0, zIndex: -1 }}></div>
 
             <div style={{ transform: 'skewY(-1deg)', transformOrigin: 'top left', padding: '70px' }}>
-                <div className="flex flex-col items-center mx-4 md:mx-0 lg:pt-[90px] md:pt-[100px] pt-[50px]">
-                    <div className="flex justify-center w-screen lg:w-[977px] lg:h-[128px] h-[100px]" style={{ height: "128px", color: "rgba(32, 34, 41, 1)" }}>
-                        <h1 className="text-[34px] md:text-[44px] lg:text-[54px] text-center md:leading-[58px] leading-[40px] font-switzer" style={{ fontWeight: "700", }}>
+                <div className="flex flex-col items-center mx-4 md:mx-0 lg:pt-[90px] md:pt-[100px] pt-[60px]">
+                    <div className="flex justify-center w-screen lg:w-[977px] lg:h-[128px] h-[70px]" style={{ color: "rgba(32, 34, 41, 1)" }}>
+                        <h1 className="text-[26px] md:text-[44px] lg:text-[54px] text-center md:leading-[58px] leading-[40px] font-switzer" style={{ fontWeight: "700", }}>
                             Your one-stop marketplace for finding the talent your business needs.
                         </h1>
                     </div>
                 </div>
 
-                <div className="flex flex-col lg:flex-row w-full justify-between lg:pt-[80px] md:pt-[100px] pt-[110px] items-center">
+                <div className="flex flex-col lg:flex-row w-full justify-between lg:pt-[80px] md:pt-[100px] pt-[70px] items-center">
                     {/* IT development */}
                     <div className='w-full lg:w-[380px]'>
                         <div className='h-68px' style={{ fontWeight: "500", fontSize: "24px", lineHeight: "34px", font: "Switzer Variable" }}>

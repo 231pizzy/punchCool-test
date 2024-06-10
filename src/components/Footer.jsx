@@ -3,7 +3,7 @@ import downicon from '/downIcon.svg'
 import yellowLogo from '/yellowLogo.svg'
 import zwilt from '/zwilt.svg'
 
-export default function Footer() {
+export default function Footer({ scrollToTop }) {
     return ( <div>
         <div style={{ width: '100%', height: '100%', overflow: 'hidden', background: 'linear-gradient(180deg, #0C0C0C 0%, #202229 100%)', transform: 'skewY(0deg)', transformOrigin: 'top left', }} className='h-full lg:h-[100%] item-center lg:p-[30px] p-[20px] md:p-[30px]'>
 
@@ -22,7 +22,7 @@ export default function Footer() {
             <div style={{ transform: 'skewY(1deg)', transformOrigin: 'top left', height: '100%', overflow: 'hidden', }} className='flex flex-col md:flex-row md:pt-16 mt-10 lg:ml-10'>
                 <div>
                     {/* logo */}
-                    <div className='md:w-[120px] md:h-[29.3px] h-[24px] w-[100px] flex justify-center'>
+                    <div className='md:w-[120px] md:h-[29.3px] h-[24px] w-[100px] flex justify-center cursor-pointer' onClick={scrollToTop}>
                         <img src={zwilt} alt='zilt logo' />
                         <img src={yellowLogo} alt='yellow logo' className='mt-2 ml-2' />
                     </div>

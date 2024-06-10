@@ -30,7 +30,7 @@ function FindTalent() {
             <p>Zwilt enabled us to deliver on time and they’ve been heavy hitters in our corner since.</p>
           </div>
 
-          <div className='flex gap-5 lg:mt-6 mt-12 md:mt-6'>
+          <div className='flex gap-5 lg:mt-6 mt-16 md:mt-6'>
             <div style={{height: "49.79px", width: "49.79px", borderRadius: "20.19px", backgroundColor: "rgba(255, 255, 255, 1)", display: "flex", justifyContent: "center", alignContent: 'center', alignItems: "center"}}>
               <img src={left}/>
             </div>

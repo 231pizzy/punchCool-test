@@ -2,7 +2,7 @@
   width: 68px;
   height: 43px;
   position: relative;
-  overflow: hidden; /* Hide overflowing content */
+  overflow: hidden; 
 }
 
 .image {
@@ -16,7 +16,7 @@
 
 .image:nth-child(2),
 .image:nth-child(3) {
-  transform: translateX(0); /* Position the images behind the first */
+  transform: translateX(0); 
 }
 
 /* Animate the first image */
@@ -25,7 +25,7 @@
       transform: translateX(0);
   }
   50% {
-      transform: translateX(10px); /* Move first image to the left */
+      transform: translateX(10px); 
   }
 }
 
@@ -35,19 +35,19 @@
       transform: translateX(0);
   }
   50% {
-      transform: translateX(-10px); /* Move second and third images to the right */
+      transform: translateX(-10px); 
   }
 }
 
 /* Apply animation to the first image */
 .image:nth-child(1) {
-  animation: moveFirstImage 3s linear infinite; /* Animate the first image */
+  animation: moveFirstImage 3s linear infinite; 
 }
 
 /* Apply animation to the second and third images */
 .image:nth-child(2),
 .image:nth-child(3) {
-  animation: moveSecondAndThirdImages 3s linear infinite; /* Animate the second and third images */
+  animation: moveSecondAndThirdImages 3s linear infinite; 
 }
 
 /* Add hover effect to stop animation on hover */
@@ -75,28 +75,36 @@ body, html {
 
 @media (max-width: 768px) {
   .container {
-    padding: 10px; /* Adjust as needed */
+    padding: 10px; 
   }
 }
 
-/* .dark-div {
-  transition: width 0.3s ease;
+.hidden {
+  display: none;
 }
 
-.explore-text {
-  opacity: 0;
-  transform: translateX(20px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+.showButton {
+  position: fixed;
+  background-color: rgba(82, 90, 160, 1);
+  border-radius: 50%;
+  padding: 0.25rem;
+  right: -100px;
+  bottom: 50px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  transform: translateX(-150px);
+  animation: slideLeft 1s;
 }
 
-.w-full:hover .dark-div {
-  width: 420px;
+@keyframes slideLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(-150px);
+  }
 }
-
-.w-full:hover .explore-text {
-  opacity: 1;
-  transform: translateX(0);
-} */
 
 .faq-card:hover {
   background-color: rgba(232, 232, 232, 1);

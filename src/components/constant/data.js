@@ -92,19 +92,19 @@ export const faqData = [
   export const footerData = [
     {
       heading: 'PLATFORMS',
-      items: ['Platform 1', 'Platform 2', 'Platform 3']
+      items: ['Find Work', 'Find Talent', 'Categories', 'About Us']
     },
     {
       heading: 'CATEGORIES',
-      items: ['Category 1', 'Category 2', 'Category 3']
+      items: ['Data Science', 'IT & Networking', 'Web & Mobile']
     },
     {
       heading: 'HELP',
-      items: ['Help 1', 'Help 2', 'Help 3']
+      items: ['FAQ’s', 'Contact Us', 'Help 3']
     },
     {
       heading: 'GET IN TOUCH @',
-      items: ['Email', 'Phone', 'Address']
+      items: ['Instagram', 'LinkedIn', 'Twitter']
     }
   ];
   

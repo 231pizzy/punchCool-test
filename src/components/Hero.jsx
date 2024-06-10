@@ -16,7 +16,7 @@ function Hero() {
             <div className="flex flex-col items-center mx-4 md:mx-0 lg:mt-[100px] md:mt-[100px] mt-[50px] flex-grow">
                 {/* Content of the Hero Section */}
                 <div className="flex justify-center w-screen lg:w-[671px] md:h-[128px] h-[100px]" style={{ color: "rgba(32, 34, 41, 1)" }}>
-                    <h1 className="text-4xl md:text-6xl lg:text-[54px] text-center lg:leading-[58px] leading-[38px]" style={{ font: "Switzer", fontWeight: "700", }}>
+                    <h1 className="text-4xl md:text-6xl lg:text-[54px] text-center lg:leading-[58px] leading-[34px]" style={{ font: "Switzer", fontWeight: "700", }}>
                         Finding the right fit
                         <span style={{ display: "inline-block", verticalAlign: "middle" }}>
                             <div className="relative inline-block">
@@ -31,7 +31,7 @@ function Hero() {
                     </h1>
                 </div>
 
-                <div className="w-full md:w-[582px] flex justify-center mt-1" style={{ fontWeight: "400", font: "Switzer", fontSize: "22px", lineHeight: "32px", textAlign: "center", color: "rgba(32, 34, 41, 1)" }}>
+                <div className="w-full md:w-[582px] flex justify-center mt-6 md:mt-1" style={{ fontWeight: "400", font: "Switzer", fontSize: "22px", lineHeight: "32px", textAlign: "center", color: "rgba(32, 34, 41, 1)" }}>
                     <p className="px-4 md:px-0">With our rigorous pre-vetting process, you'll never have to worry about finding the ideal candidate ever again.</p>
                 </div>
 
@@ -52,37 +52,39 @@ function Hero() {
                 </div>
 
                 {/* skills */}
-                <div className=' w-[380px] md:w-[700px] lg:w-[920px] lg:h-[260px] h-[300px] md:h-[260px] mb:h-[140px] mb-6' style={{ borderRadius: "15px", backgroundColor: "rgba(248, 248, 248, 1)" }}>
-                    <div className='flex justify-center items-center gap-6 mt-4 md:mt-8 font-switzer md:text-[16px] text-[14px]'>
-                        <button
-                            className={`lg:w-[192px] w-[152px] h-[44px] rounded-lg ${activeCategory === 'IT & Development' ? 'bg-green-300' : 'bg-gray-300'}`}
-                            onClick={() => handleCategoryChange('IT & Development')}
-                        >
-                            IT & Development
-                        </button>
-                        <button
-                            className={`w-[152px] h-[44px] lg:w-[192px] rounded-lg ${activeCategory === 'Design and Creative' ? 'bg-green-300' : 'bg-gray-300'}`}
-                            onClick={() => handleCategoryChange('Design and Creative')}
-                        >
-                            Design and Creative
-                        </button>
-                    </div>
+                <div className='w-[380px] md:w-[700px] lg:w-[920px] lg:h-[260px] h-[300px] md:h-[260px] mb:h-[140px] mb-6' style={{ borderRadius: "15px", backgroundColor: "rgba(248, 248, 248, 1)" }}>
+    <div className='flex justify-center items-center gap-6 mt-4 md:mt-8 font-switzer md:text-[16px] text-[14px]'>
+        <button
+            className={`lg:w-[192px] w-[152px] h-[44px] rounded-lg ${activeCategory === 'IT & Development' ? 'bg-green-300' : 'bg-gray-300'}`}
+            onClick={() => handleCategoryChange('IT & Development')}
+        >
+            IT & Development
+        </button>
+        <button
+            className={`w-[152px] h-[44px] lg:w-[192px] rounded-lg ${activeCategory === 'Design and Creative' ? 'bg-green-300' : 'bg-gray-300'}`}
+            onClick={() => handleCategoryChange('Design and Creative')}
+        >
+            Design and Creative
+        </button>
+    </div>
 
-                    <div className="mt-4 flex justify-center items-center px-4 text-[14px] md:text-[16px]">
-                        {activeCategory === 'IT & Development' && (
-                            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap:4 cursor-pointer ml-2" style={{ color: "rgba(210, 210, 210, 1)" }}>
-                                {iTData.map(skill => (
-                                    <div key={skill.id} className={`hover:underline ${[7, 12].includes(skill.id) ? 'text-[#202229] font-bold' : ''}`}>
-                                        {skill.name}
-                                    </div>
-                                ))}
-                            </div>
-                        )}
-                        {activeCategory === 'Design and Creative' && (
-                            <p style={{ color: "rgba(210, 210, 210, 1)", textAlign: "center" }}>No data available for Design and Creative category yet.</p>
-                        )}
+    <div className="mt-4 flex justify-center items-center text-[14px] md:text-[16px]">
+        {activeCategory === 'IT & Development' && (
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 cursor-pointer w-full px-4" style={{ color: "rgba(210, 210, 210, 1)", justifyItems: "center" }}>
+                {iTData.map(skill => (
+                    <div key={skill.id} className={`hover:underline ${[7, 12].includes(skill.id) ? 'text-[#202229] font-bold' : ''}`}>
+                        {skill.name}
                     </div>
-                </div>
+                ))}
+            </div>
+        )}
+        {activeCategory === 'Design and Creative' && (
+            <p style={{ color: "rgba(210, 210, 210, 1)", textAlign: "center" }}>No data available for Design and Creative category yet.</p>
+        )}
+    </div>
+</div>
+
+
             </div>
 
             {/* Union Image */}
