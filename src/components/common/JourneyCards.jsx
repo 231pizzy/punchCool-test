@@ -4,8 +4,8 @@ import Button from './Button';
 export default function JourneyCards({ index, title, data, image, color, buttonName }) {
   return (
     <div className='w-full lg:h-[387.5px] mb-4 lg:mb-6' style={{ backgroundColor: color, transform: 'skewY(-1.8deg)', transformOrigin: 'top left', }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', }}>
-        <div className='w-[520px] lg:mt-14 lg:ml-4 ml-0 mt-4 md:ml-2 md:mt-6' style={{ transform: 'skewY(1.8deg)', transformOrigin: 'top left', display: "flex" }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap' }}>
+        <div className='w-full lg:w-[520px] lg:mt-14 lg:ml-4 ml-0 mt-4 md:ml-2 md:mt-6' style={{ transform: 'skewY(1.8deg)', transformOrigin: 'top left', display: "flex" }}>
           <div className='h-[83px] lg:w-[51.23px] w-6 md:w-10 mt-2'>
             <img src={index} alt="index" />
           </div>
@@ -23,14 +23,15 @@ export default function JourneyCards({ index, title, data, image, color, buttonN
           </div>
         </div>
 
-        <div>
-          <img src={image} alt="Image" />
+        <div className='w-full lg:w-auto'>
+          <img src={image} alt="Image" className='w-full lg:w-auto' />
         </div>
       </div>
 
     </div>
   )
 }
+
 JourneyCards.propTypes = {
   index: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

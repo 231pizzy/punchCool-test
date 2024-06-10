@@ -14,7 +14,7 @@ export default function Button({name}) {
                     const buttonLogo = darkDiv.querySelector('img'); 
                     if (exploreText) {
                         exploreText.style.position = "absolute"; 
-                        exploreText.style.left = "20px"; // Adjusted left position
+                        exploreText.style.left = "20px"; 
                         exploreText.style.color = "white"; 
                     }
                     if (buttonLogo) {
@@ -31,7 +31,7 @@ export default function Button({name}) {
                     const exploreText = darkDiv.parentElement.querySelector('.explore-text'); 
                     const buttonLogo = darkDiv.querySelector('img'); 
                     if (exploreText) {
-                        exploreText.style.position = "relative"; // Reset position
+                        exploreText.style.position = "relative"; 
                         exploreText.style.left = "auto"; 
                         exploreText.style.color = "rgba(32, 34, 41, 1)"; 
                     }

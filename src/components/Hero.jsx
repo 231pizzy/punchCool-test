@@ -31,7 +31,7 @@ function Hero() {
                     </h1>
                 </div>
 
-                <div className="w-full md:w-[582px] flex justify-center mt-6 md:mt-1" style={{ fontWeight: "400", font: "Switzer", fontSize: "22px", lineHeight: "32px", textAlign: "center", color: "rgba(32, 34, 41, 1)" }}>
+                <div className="w-full md:w-[582px] flex justify-center mt-6" style={{ fontWeight: "400", font: "Switzer", fontSize: "22px", lineHeight: "32px", textAlign: "center", color: "rgba(32, 34, 41, 1)" }}>
                     <p className="px-4 md:px-0">With our rigorous pre-vetting process, you'll never have to worry about finding the ideal candidate ever again.</p>
                 </div>
 
