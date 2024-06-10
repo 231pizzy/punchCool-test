@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import logo from '../../public/logo.png';
-import logoIcon from '../../public/Vector.png';
+import logo from '/logo.png';
+import logoIcon from '/Vector.png';
 
 function Navbar() {
     const [open, setOpen] = useState(false);
