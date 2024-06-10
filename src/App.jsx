@@ -9,12 +9,24 @@ const Journey = lazy(() => import('./components/Journey'));
 const About = lazy(() => import('./components/About'));
 const Faq = lazy(() => import('./components/Faq'));
 const Footer = lazy(() => import('./components/Footer'));
+import { TailSpin } from 'react-loader-spinner'
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={ <div style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <TailSpin
+                visible={true}
+                height="80"
+                width="80"
+                color="rgba(82, 90, 160, 1)"
+                ariaLabel="tail-spin-loading"
+                radius="1"
+                wrapperStyle={{}}
+                wrapperClass=""
+            />
+        </div>}>
         <section id="home">
           <Hero />
         </section>

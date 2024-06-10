@@ -2,64 +2,59 @@
   width: 68px;
   height: 43px;
   position: relative;
-  overflow: hidden; 
+  overflow: hidden; /* Hide overflowing content */
 }
 
 .image {
-  border-radius: 100px;
+  width: 68px;
+  height: 43px;
   position: absolute;
   top: 0;
   left: 0;
   transition: transform 1s ease; 
 }
 
+.image:nth-child(2),
+.image:nth-child(3) {
+  transform: translateX(0); /* Position the images behind the first */
+}
+
 /* Animate the first image */
 @keyframes moveFirstImage {
   0%, 100% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
   50% {
-    transform: translateX(20px); /* Move the first image to the left by 10px */
+      transform: translateX(10px); /* Move first image to the left */
   }
 }
 
-/* Animate the second image */
-@keyframes moveSecondImage {
+/* Animate the second and third images */
+@keyframes moveSecondAndThirdImages {
   0%, 100% {
-    transform: translateX(0);
+      transform: translateX(0);
   }
   50% {
-    transform: translateX(15px); /* Move the second image to the right by 10px */
+      transform: translateX(-10px); /* Move second and third images to the right */
   }
 }
 
-/* Animate the third image */
-@keyframes moveThirdImage {
-  0%, 100% {
-    transform: translateX(0);
-  }
-  50% {
-    transform: translateX(-15px); /* Move the third image to the right by 15px */
-  }
-}
-
-/* Apply animations to each image */
+/* Apply animation to the first image */
 .image:nth-child(1) {
-  animation: moveFirstImage 3s linear infinite; 
+  animation: moveFirstImage 3s linear infinite; /* Animate the first image */
 }
 
-.image:nth-child(2) {
-  animation: moveSecondImage 3s linear infinite; 
-}
-
+/* Apply animation to the second and third images */
+.image:nth-child(2),
 .image:nth-child(3) {
-  animation: moveThirdImage 3s linear infinite; 
+  animation: moveSecondAndThirdImages 3s linear infinite; /* Animate the second and third images */
 }
 
 /* Add hover effect to stop animation on hover */
 .image-stack:hover .image {
   animation-play-state: paused;
 }
+
 
 
 body, html {
