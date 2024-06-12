@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { faqData } from "./constant/data"
 import yellowLogo from '/yellowLogo.svg'
+import { useSelector } from "react-redux";
 
 
 export default function Faq() {
     const [hoveredId, setHoveredId] = useState(null);
+    const faqData = useSelector(state => state.faqData);
 
     return (
         <div style={{ width: '100%', height: '100%', overflow: 'hidden', backgroundColor: 'rgba(243, 243, 243, 1)', transform: 'skewY(-1deg)', transformOrigin: 'top left', }} className='h-full lg:h-[100%]'>
@@ -50,7 +51,7 @@ export default function Faq() {
                             {/* icon */}
                             {hoveredId === faq.id && (
                                 <div className="mr-4">
-                                    <img src={yellowLogo} alt="yellowLogo"/>
+                                    <img src={yellowLogo} alt="yellowLogo" className="md:h-[24px] md:w-[24px] h-[16px] w-[16px]"/>
                                 </div>
                             )}
                         </div>

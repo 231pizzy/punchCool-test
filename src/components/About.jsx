@@ -1,8 +1,10 @@
+import { useSelector } from 'react-redux';
 import AboutCards from './common/AboutCards'
-import { cardData } from './constant/data'
+// import { cardData } from './constant/data'
 
 
 export default function About() {
+  const cardData = useSelector(state => state.cardData);
   return (
     <div style={{ transform: 'skewY(-1deg)', transformOrigin: 'top left', backgroundColor: "rgba(237, 239, 255, 0.5)" }}>
       <div style={{ backgroundColor: 'rgba(237, 239, 255, 0.5)', transform: 'skewY(1deg)', transformOrigin: 'top left', height: '100%', marginTop: "50px", alignContent: "center", alignItems: "center" }} className='lg:pt-[80px] lg:pb-[90px] md:pt-[70px] md:pb-[70px] pb-16 pt-4 lg:p-10 flex  lg:flex-row max-w-full overflow-x-auto p-5'>

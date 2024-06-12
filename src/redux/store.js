@@ -1,24 +1,25 @@
-import { combineReducers, configureStore } from "@reduxjs/toolkit";
-import useReducer from "./user/userSlice";
-import { persistReducer, persistStore } from "redux-persist";
-import storage from "redux-persist/lib/storage";
+import { configureStore } from '@reduxjs/toolkit';
+import ITdataSlice from './data/ITdataSlice';
+import designDataSlice from './data/designDataSlice';
+import itDevDataSlice from './data/itDevDataSlice';
+import designDataCardSlice from './data/designDataCardSlice';
+import cardDataSlice from './data/cardDataSlice';
+import faqDataSlice from './data/faqDataSlice';
+import footerDataSlice from './data/footerDataSlice';
 
-const rootReducer = combineReducers({ user: useReducer });
 
-const persistConfig = {
-  key: "root",
-  storage,
-  version: 1,
-};
 
-const persistedReducer = persistReducer(persistConfig, rootReducer);
 
-export const store = configureStore({
-  reducer: persistedReducer,
-  middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware({
-      serializableCheck: false,
-    }),
+const store = configureStore({
+  reducer: {
+    itData: ITdataSlice,
+    designData: designDataSlice,
+    itDevDataCard: itDevDataSlice,
+    designDataCard: designDataCardSlice,
+    cardData: cardDataSlice,
+    faqData: faqDataSlice,
+    footerData: footerDataSlice
+  }
 });
 
-export const persistor = persistStore(store);
+export default store;

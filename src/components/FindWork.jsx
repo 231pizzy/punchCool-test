@@ -2,8 +2,7 @@ import bg from '/2ndBg.png';
 import skillIcon from '/skillsicon.png';
 import categoryIcon from '/categoriesIcon.png';
 import profleIcon from '/profileicon.png';
-import buttonLogo from '/whitelogo.png'
-import { designData, itDevData } from './constant/data';
+import { useSelector } from 'react-redux';
 
 import blkfwd from '/blkfwd.png'
 import blkbck from '/blkbck.svg'
@@ -11,6 +10,8 @@ import Button from './common/Button';
 
 
 function FindWork() {
+    const itDevData = useSelector(state => state.itDevDataCard);
+    const designData = useSelector(state => state.designDataCard);
 
     return (
         <div style={{ width: '100%', height: '100%', overflow: 'hidden', position: 'relative', transform: 'skewY(1deg)', transformOrigin: 'top left' }} >

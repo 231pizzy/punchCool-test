@@ -3,7 +3,7 @@ import jason from '/jason.png'
 import groove from '/groovehq.png'
 import left from '/left.png'
 import right from '/right.png'
-import whiteGroove from '/whiteGroove.png'
+import whiteGroove from '/groove1.svg'
 
 
 function FindTalent() {
@@ -44,8 +44,8 @@ function FindTalent() {
 
         <div className='lg:ml-[101px] ml-2 mt-[40px] lg:mt-[100px] md:mt-[60px]'>
           <div className='flex'>
-            <div style={{height: "98.79px", width: "98.79px", borderRadius: "40.05px", backgroundColor: "rgba(175, 124, 255, 1)", display: "flex", alignContent: "center", alignItems: "center", justifyContent: "center"}}>
-              <img src={whiteGroove} alt='whiteGroove' className='h-[21px] w-[76px]'/>
+            <div>
+              <img src={whiteGroove} alt='whiteGroove' />
             </div>
             <div>
             <div className='w-[209px] h-[44px] text-[34px] leading-[44px] ml-4' style={{color: "rgba(255, 255, 255, 1)", fontWeight: "600"}}>
