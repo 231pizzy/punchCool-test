@@ -9,7 +9,6 @@ import ITdataSlice from './data/ITdataSlice';
 
 
 
-
 const store = configureStore({
   reducer: {
     itData: ITdataSlice,

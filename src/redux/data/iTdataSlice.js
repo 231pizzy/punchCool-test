@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const itDataSlice = createSlice({
+const iTDataSlice = createSlice({
   name: 'itData',
   initialState: [
     { id: 1, name: "Python Developer" },
@@ -19,4 +19,4 @@ const itDataSlice = createSlice({
   reducers: {}
 });
 
-export default itDataSlice.reducer;
+export default iTDataSlice.reducer;
