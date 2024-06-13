@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import ITdataSlice from './data/ITdataSlice';
+import ITdataSlice from './data/itDataSlice';
 import designDataSlice from './data/designDataSlice';
 import itDevDataSlice from './data/itDevDataSlice';
 import designDataCardSlice from './data/designDataCardSlice';
