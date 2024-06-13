@@ -9,7 +9,7 @@ import { useSelector } from 'react-redux';
 
 function Hero() {
     const [activeCategory, setActiveCategory] = useState('IT & Development');
-    const itData = useSelector(state => state.itData);
+    const techData = useSelector(state => state.techData);
     const designData = useSelector(state => state.designData);
 
     const handleCategoryChange = (category) => {
@@ -76,7 +76,7 @@ function Hero() {
                     <div className="mt-4 flex justify-center items-center text-[14px] md:text-[16px]">
                         {activeCategory === 'IT & Development' && (
                             <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 cursor-pointer w-full px-4" style={{ color: "rgba(210, 210, 210, 1)", justifyItems: "center" }}>
-                                {itData.map(skill => (
+                                {techData.map(skill => (
                                     <div key={skill.id} className={`hover:text-[#202229] ${[12].includes(skill.id) ? 'text-[#202229] font-bold' : ''}`}>
                                         {skill.name}
                                     </div>

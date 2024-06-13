@@ -5,13 +5,14 @@ import designDataCardSlice from './data/designDataCardSlice';
 import cardDataSlice from './data/cardDataSlice';
 import faqDataSlice from './data/faqDataSlice';
 import footerDataSlice from './data/footerDataSlice';
-import iTdataSlice from './data/ITdataSlice';
+import techDataSlice from './data/techDataSlice';
+
 
 
 
 const store = configureStore({
   reducer: {
-    itData: iTdataSlice,
+    techData: techDataSlice,
     designData: designDataSlice,
     itDevDataCard: itDevDataSlice,
     designDataCard: designDataCardSlice,
