@@ -51,20 +51,3 @@ function Articles() {
 }
 
 export default Articles;
-
-
-
-{/* <div style={{border: "1px solid rgba(240, 240, 240, 1)", borderRadius:"7px",  boxShadow: "0px 15px 30px 0px rgba(0, 0, 0, 0.07)"}} className='w-full lg:w-[635px] h-[163px] mt-1 p-[10px] lg:p-[20px]'>
-<div className='flex' style={{alignContent: "center", alignItems: "center"}}>
-<div style={{height: "57px", width: "57px", backgroundColor: "rgba(139, 164, 253, 1)", borderRadius: "43.94px", display: "flex", alignContent: "center", alignItems: "center", justifyContent: "center"}}>
-  <img src={play2} alt="Play icon"/>
-</div>
-
-<h2 style={{fontWeight: "600", fontSize: "16px", lineHeight: "17.83px", color: "rgba(32, 34, 41, 1)", marginLeft: "16px"}}>
-step 2: <span style={{fontWeight: "400", fontSize: "16px", lineHeight: "17.83px", color: "rgba(32, 34, 41, 1)"}}>Video Interview</span>
-</h2>
-</div>
-<div className='w-full lg:w-[531px] h-[52px] mt-1'>
-<h3>Candidates are assessed through skill based questions in a virtual setting. Allowing you to gauge personality and cultural fit.</h3>
-</div>
-</div> */}
